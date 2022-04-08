@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Lagoona сеть отелей</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/reservation.css">
+  <link rel="stylesheet" href="css/special-offer.css">
+  <link rel="stylesheet" href="css/information.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/advantages.css">
+  <link rel="stylesheet" href="css/placement.css">
+  <link rel="stylesheet" href="css/contacts.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="preload" href="fonts/MullerBold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MullerLight.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MullerMedium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/MullerRegular.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+
+  <header> 
+    <h1 class="visually-hidden">Lagoona сеть отелей</h1>
+    <div class="container">
+      <div class="header-top">
+        <a><img src="img/Logo.jpg" alt="Lagoona сеть отелей" class="logo"></a>
+        <a href="tel:+74953225448" class="tell-nomber"><b>+7 495 322 54 48</b></a>
+        <a href="" class="personal-account">Личный кабинет</a>
+      </div>
+      <div class="header-bottom">
+        <nav>
+          <ul class="nav-item">
+            <li class="nav-item-list">
+              <a href="">О нас</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="">Услуги</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="">Преимущества</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="">Размещение</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="">Блог</a>
+            </li>
+            <li class="nav-item-list">
+              <a href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+          <div class="search">
+            <input type="search" name="search" placeholder="Поиск" class="search__input">
+            <button class="search__button"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container reservation">
+      <section>
+        <div class="fast-reservation">
+          <h2 class="fast-reservation__title">Быстрая бронь</h2>
+          <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST">
+            <input type="text" required name="city" class="fast-reservation__form" placeholder="Город">
+            <input type="text" required name="category" class="fast-reservation__form" placeholder="Категория номера">
+            <input type="text" required name="date" class="fast-reservation__form" placeholder="Дата заселения">
+            <input type="number" required name="nights" class="fast-reservation__form" placeholder="Количество ночей">
+            <input type="number" required name="guests" class="fast-reservation__form" placeholder="Количество гостей">
+            <div class="number">
+              <input class="number__find" type="submit" name="Найти" value="Найти номер">
+              <p class="number__offers-explanation"><a href="" class="number__offers">9 756</a> Предложений доступно</p>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section>
+        <div class="special-offer">
+          <h2 class="special-offer__title">Спецпредложение</h2>
+          <article class="special-offer__content">
+            <div>
+              <h3 class="special-offer__text">Номера категории люкс</h3>
+              <p class="special-offer__price">от 5000 р <a href="" class="special-offer__detail">Подробнее</a></p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section>
+      <div class="container information">
+        <h2 class="information__title">О нас</h2>
+        <p class="information__text">Идейные соображения высшего порядка, а также сложившаяся структура организации влечёт за собой процесс
+          внедрения и модернизации системы обучения кадров, соответствует насущным потребностям. Идейные соображения
+          высшего порядка, а также дальнейшее развитие различных форм деятельности представляет собой интересный
+          эксперимент проверки системы обучения кадров, соответствует насущным потребностям. Равным образом сложившаяся
+          структура организации требуют определения и уточнения существенных финансовых и административных условий.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container services">
+        <h2 class="services__title">Услуги</h2>
+        <ul class="services__list">
+          <li class="services__section">
+            <h3>
+              <a href="" class="services__section-title">Эксклюзовное обслуживание</a>
+            </h3>
+            <p class="services__text">Равным образом постоянный количественный рост и сфера нашей активности</p>
+          </li>
+          <li class="services__section">
+            <h3>
+              <a href="" class="services__section-title">Аренда банкетных залов</a>
+            </h3>
+            <p class="services__text">Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм</p>
+          </li>
+          <li class="services__section">
+            <h3>
+              <a href="" class="services__section-title">Сауны, бассейны, бани, фитнес-залы</a>
+            </h3>
+            <p class="services__text">Не следует, однако, забывать,что начало повседневной работы по формированию позиции</p>
+          </li>
+          <li class="services__section">
+            <h3>
+              <a href="" class="services__section-title">Охраняемые автомобильные стоянки</a>
+            </h3>
+            <p class="services__text">Не следует, однако забывать, что начало повседневной работы по формированию позиции</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container advantages">
+        <h2 class="advantages-title">Преимущества</h2>
+        <ul class="advantages-list">
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Идейные соображения высшего порядка, а также постояный количественный рост</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Значимость этих проблем настолько очевидна, что вопрос остаётсяоткрытым</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Таким образом реализация плановых аданий игает важную роль для понимания</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Повседневная практика показывает, что сложившаяся структура организации</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Равным образом рамки и место обучения кадров способствует подготовки сотрудника</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Консультация с активом влечет за собой процесс внедрения услуг нашего сервиса</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Повседневная практика показывает, что дальнейшее развитие различных форм</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Значимость этого настолько очевидна, что консультаци наших экспертов помогает</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Значимость этого настолько очевидна, что консультаци наших экспертов помогает</p>
+          </li>
+          <li class="advantages-list-point">
+            <p class="advantages-list-point-text">Значимость этого настолько очевидна, что консультаци наших экспертов помогает</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <div class="container placement">
+        <h2 class="placement-title">Размещение</h2>
+        <ul class="accomondation-list">
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/23.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">4 698 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA5klEQVQokY2SsWoCURBFzy4W+YULdmIISEp7sRfsxEL8gxSClbVfkMou4A/4HaYOhIhWspMfEFKErIw+5bFrcC8MDMM9zHvvviTPc4oysxRYhXFf0l/Rk5aoswZAL9TglqG00cxqwCfQCKMt8CTp9yZoZglQB0bAvLBgBiyBvaQTkGRZNgXGYcPDP0e/6AfYAW8OroH2HaCod3+cYbhHVbl3mErypgN8VADd03Emfpwm8HUHfJS08SbOURU2Xj0x+FwBvHpisBX138AklPclj/+SizyWrmcEvEo6+NDMFsBLyNo9ABwB4WJB1vDCxncAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona española</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/24.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">5 148 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA5klEQVQokY2SsWoCURBFzy4W+YULdmIISEp7sRfsxEL8gxSClbVfkMou4A/4HaYOhIhWspMfEFKErIw+5bFrcC8MDMM9zHvvviTPc4oysxRYhXFf0l/Rk5aoswZAL9TglqG00cxqwCfQCKMt8CTp9yZoZglQB0bAvLBgBiyBvaQTkGRZNgXGYcPDP0e/6AfYAW8OroH2HaCod3+cYbhHVbl3mErypgN8VADd03Emfpwm8HUHfJS08SbOURU2Xj0x+FwBvHpisBX138AklPclj/+SizyWrmcEvEo6+NDMFsBLyNo9ABwB4WJB1vDCxncAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona son tipicas</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/26.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 254 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona de la guerra</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/32.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 320 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona mentira piadosa</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/30.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 457 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA5klEQVQokY2SsWoCURBFzy4W+YULdmIISEp7sRfsxEL8gxSClbVfkMou4A/4HaYOhIhWspMfEFKErIw+5bFrcC8MDMM9zHvvviTPc4oysxRYhXFf0l/Rk5aoswZAL9TglqG00cxqwCfQCKMt8CTp9yZoZglQB0bAvLBgBiyBvaQTkGRZNgXGYcPDP0e/6AfYAW8OroH2HaCod3+cYbhHVbl3mErypgN8VADd03Emfpwm8HUHfJS08SbOURU2Xj0x+FwBvHpisBX138AklPclj/+SizyWrmcEvEo6+NDMFsBLyNo9ABwB4WJB1vDCxncAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona empujar la creatividad</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/31.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 490 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA5klEQVQokY2SsWoCURBFzy4W+YULdmIISEp7sRfsxEL8gxSClbVfkMou4A/4HaYOhIhWspMfEFKErIw+5bFrcC8MDMM9zHvvviTPc4oysxRYhXFf0l/Rk5aoswZAL9TglqG00cxqwCfQCKMt8CTp9yZoZglQB0bAvLBgBiyBvaQTkGRZNgXGYcPDP0e/6AfYAW8OroH2HaCod3+cYbhHVbl3mErypgN8VADd03Emfpwm8HUHfJS08SbOURU2Xj0x+FwBvHpisBX138AklPclj/+SizyWrmcEvEo6+NDMFsBLyNo9ABwB4WJB1vDCxncAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona el retorno</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/27.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 505 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona enfermino</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item">
+            <article class="accomondation-article-container">
+              <img src="img/29.jpg" alt="двухэтажный белокаменный отель" class="accomondation-item-img">
+              <div class="accomondation-item-wrapper">
+                <div class="accomondation-item-desc">
+                  <span class="item_desc">от </span>
+                  <b class="item_desc-price">6 824 р</b> /ночь
+                  <span class="accomondatoin-item-rating">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="Рейтинг отеля 4 из 5" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA9UlEQVQokY2RsUoDQRCGvzss8gQLAbughIQU+waHfSCNHFcEX2BJEUhl7RPkGjvBF/A5LNxKCIpWFsn2QgrxwiR7YblLuPthYBj+b2d2JiqKgqqczWPgxZcnSpv/qieuUQelwNhHespQ6+hsfgGsgJ4vfQF9pc3fSdDZPAIugSnwUGlwDzwDP0qbPRBt3pYL4M536JwZvdQW+AaeZKxbYNgAlJKHB8LIcjL/j7YSbxYrbSRJgPcWoHgSYcLlXAEfDeC10uZTkvCO3RYdj54QHLUAj54QDDe7BuY+JK955BylXoEbuRGwVNr8StHZ/BGY+VuLB4Ad1vo+zGwiCfoAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                    <img src="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAANCAYAAACZ3F9/AAAA5klEQVQokY2SsWoCURBFzy4W+YULdmIISEp7sRfsxEL8gxSClbVfkMou4A/4HaYOhIhWspMfEFKErIw+5bFrcC8MDMM9zHvvviTPc4oysxRYhXFf0l/Rk5aoswZAL9TglqG00cxqwCfQCKMt8CTp9yZoZglQB0bAvLBgBiyBvaQTkGRZNgXGYcPDP0e/6AfYAW8OroH2HaCod3+cYbhHVbl3mErypgN8VADd03Emfpwm8HUHfJS08SbOURU2Xj0x+FwBvHpisBX138AklPclj/+SizyWrmcEvEo6+NDMFsBLyNo9ABwB4WJB1vDCxncAAAAASUVORK5CYII=" alt="" class="rating-stars">
+                  </span>
+                </div>
+                <h3 class="item_desc-name" lang="es">Lagoona suerte siguio siempre</h3>
+                <p class="item_desc-location">Барселона, Испания</p>
+                <a href="" class="accomondation-item-rooms"><b>Номера</b></a>
+              </div>
+            </article>
+          </li>
+          <li class="accomondation-item all-options">
+            <a href="" class="all-options-text"><p>Посмотреть все варианты</p></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container contacts-and-communication">
+      <section class = contacts>
+        <h2 class="contacts-title">
+          Контакты
+        </h2>
+        <div class="contacts-list">
+        <div class="contacts-section">
+          <h3 class="contacts-section-title">
+            Адрес
+          </h3>
+          <div class="contacts-section-text">
+            <address>
+              <b>Москва, улица Юности, дом 5 строение 4, офис 2</b>
+            </address>
+          </div>
+        </div>
+        <div class="contacts-section">
+          <h3 class="contacts-section-title">
+            Телефоны
+          </h3>
+          <div class="contacts-section-text">
+            <p>
+              <a href="tel:+74995356434" class = "contacts-link">
+                  +7 (499) 535-64-34
+              </a>
+            </p>
+            <p>
+              <a href="tel:+74950050544" class = "contacts-link">
+                +7 (495) 005-05-44
+              </a>
+            </p>
+          </div>
+        </div>
+        <div class="contacts-section">
+          <h3 class="contacts-section-title">
+            E-mail
+          </h3>
+          <div class="contacts-section-text">
+            <p class="contacts-mail-text">
+              <a href="mailto:lg.oona@mail.ru" class = "contacts-link">lg.oona@mail.ru</a>
+              по вопросам бронирования
+            </p>
+            <p class="contacts-mail-text">
+              <a href="mailto:hotels.ln@mail.ru" class = "contacts-link">hotels.ln@mail.ru</a>
+              по вопросам сотрудничества
+            </p>
+          </div>
+        </div>
+        <div class="contacts-section">
+          <h3 class="contacts-section-title">
+            График
+          </h3>
+          <div class="contacts-section-text">
+            <p>Понедельник - пятница, с 10:0 до 19:00</p>
+          </div>
+        </div>
+        <a href="" class="contacts-address-build-route"><b>Построить маршрут</b></a>
+      </div>
+      </section>
+
+      <section class="communication">
+        <h2 class="communication-title">
+          Напишите нам
+        </h2>
+        <form action="https://jsonplaceholder.typicode.com/posts" autocomplete="on" method="POST" class="communication-form">
+          <input type="text" required name="name" placeholder="Имя" class="communication-form-section">
+          <input type="tel" required name="tell" placeholder="+7" class="communication-form-section">
+          <input type="text" name="message" placeholder="Сообщение..." class="communication-form-section">
+          <input class="form-find-number communication-form-section" type="submit" name="Найти" value="Найти номер">
+        </form>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class = "hotels-footer container">
+
+    <div class="hotels-footer-section">
+      <p class="hotels-footer-section-text contacts-section-address">
+        © 2012-2020 Управляющая компания Объединенной сети «Лагуна Хотелс»
+      </p>
+      <p class="hotels-footer-section-text contacts-section-address">
+        Представленная на сайте информация носит справочный характер и не является публичной офертой
+      </p>
+      <a href="#" class="contacts-section-link">
+        Политика конфиденциальности
+      </a>
+    </div>
+
+    <div class="hotels-footer-section">
+      <address class="hotels-footer-section-text contacts-section-address">
+        11710, улица Юности, дом 5 строение 4, офис 2
+      </address>
+      <p>
+        <a href="tel:+74995356434" class = "contacts-link">
+          +7 (499) 535-64-34
+        </a>
+      </p>
+      <p class="hotels-footer-section-text">
+        <a href="tel:+74950050544" class = "contacts-link">
+          +7 (495) 005-05-44
+        </a>
+      </p>
+      <p><a href="mailto:lg.oona@mail.ru" class = "contacts-link">lg.oona@mail.ru</a></p>
+      <p><a href="mailto:hotels.ln@mail.ru" class = "contacts-link">hotels.ln@mail.ru</a></p>
+    </div>
+
+    <ul class = "hotels-footer-section contacts-images">
+      <li>
+        <a href="#" class="social-link social-link_tripadvisor" aria-label='Поделиться в tripadvisor'></a>
+      </li>
+      <li>
+        <a href="#" class="social-link social-link_twitter" aria-label='Поделиться в twitter'></a>
+      </li>
+      <li>
+        <a href="#" class="social-link social-link_facebook" aria-label='Поделиться в facebook.com'></a>
+      </li>
+      <li>
+        <a href="#" class="social-link social-link_social" aria-label='Поделиться в Vk.com'></a>
+      </li>
+      <li>
+        <a href="#" class="social-link social-link_google" aria-label='Поделиться в google'></a>
+      </li>
+    </ul>
+
+  </footer>
+</body>
+
+</html>

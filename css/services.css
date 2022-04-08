@@ -1,0 +1,89 @@
+.services {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.services__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.services__title {
+  font-size: 40px;
+  margin-bottom: 25px;
+  padding-left: 20px;
+}
+
+.services__section {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 570px;
+  padding: 40px;
+  padding-top: 200px;
+  background-color: var(--text-color-white);
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 3px 1px 15px #cccccc;
+}
+
+.services__section:nth-child(2n+1) {
+  margin-right: 25px;
+}
+
+.services__section:nth-child(1) {
+  background-image: url(../img/10.jpg);
+  background-repeat: no-repeat;
+}
+
+.services__section:nth-child(2) {
+  background-image: url(../img/15.jpg);
+  background-repeat: no-repeat;
+}
+
+.services__section:nth-child(3) {
+  background-image: url(../img/12.jpg);
+  background-repeat: no-repeat;
+}
+
+.services__section:nth-child(4) {
+  background-image: url(../img/carlo-d-agnolo-aFxSh_l4fbY-unsplash.jpg);
+  background-repeat: no-repeat;
+}
+.services__section-title {
+  display: inline-block;
+  padding-right: 20px;
+  font-size: 22px;
+  color: var(--button-color-light);
+  background-image: url(../img/more-detailed.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.services__section-title:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.services__section-title:active {
+  border: 3px;
+  background-color: #666666;
+}
+
+.services__section-title:focus {
+  border-color: #666666;
+}
+
+.services__text {
+  display: inline-block;
+  font-size: 16px;
+  color: var(--text-color-gray);
+  padding-top: 20px;
+  line-height: 20px;
+
+}

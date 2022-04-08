@@ -1,0 +1,77 @@
+.reservation {
+  display: flex;
+  flex-direction: row;
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.fast-reservation {
+  width: 520px;
+  height: 605px;
+  margin-right: 55px;
+}
+
+.fast-reservation__title {
+margin-left: 45px;
+font-size: 40px;
+}
+
+.fast-reservation__form {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-top: 20px;
+  height: 70px;
+  width: 520px;
+  background-color: var(--text-color-white);
+  border-radius: 12px;
+  padding: 20px;
+  border: 0px;
+}
+
+.number {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.number__find {
+  height: 70px;
+  width: 160px;
+  background-color: var(--button-color-light);
+  font-size: 16px;
+  color: var(--text-color-white);
+  border-radius: 12px;
+  border-width: 0ch;
+  border-color: var(--button-color-light);
+  margin-right: 25px;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.number__offers {
+  font-size: 16px;
+  color: var(--button-color-light);
+}
+
+.number__offers-explanation {
+  font-size: 16px;
+  color: #999999;
+}
+
+.number__find:hover {
+  transform: scale(1.1);
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+}
+
+.number__find:active {
+  border: 3px;
+  background-color: #666666;
+}
+
+.number__find:focus {
+  border-color: #666666;
+}

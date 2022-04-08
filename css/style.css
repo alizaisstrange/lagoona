@@ -1,0 +1,127 @@
+.visually-hidden {
+  position: absolute !important;  /* Элемент абсолютно позиционирован, при этом другие элементы отображаются на веб-странице словно абсолютно позиционированного элемента и нет. !important позволяет повысить приоритет стиля  */
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7  Определяет область позиционированного элемента, в которой будет показано его содержимое. Все, что не помещается в эту область, будет обрезано.*/
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;  /* Внутренний отступ */
+  border: 0 !important;  /* Нулевая толщина границы  */
+  height: 1px !important;  /* Высота */
+  width: 1px !important;  /* Ширина */
+  overflow: hidden;  /* Отображается только область внутри элемента, остальное будет скрыто */
+}
+
+* {
+	margin: 0;  /* Внешний отступ */
+	padding: 0;
+	box-sizing: border-box;  /* Свойства width и height включают в себя значения полей и границ, но не отступов */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;  /* box-sizing наследует значение родителя  */
+}
+
+body {
+  font-family: "Muller", "sans-serif";  /* Семейство шрифта */
+  font-weight: 400;  /* Насыщенность шрифта */
+  margin: 0;
+  display: flex;  /* Механизм создания блоков. */
+  flex-direction: column;  /* Главная ось flex-контейнера направлена сверху вниз */
+  background-color: #f1f1f1;  /* Цвет фона */
+  font-size: 16px;  /* Размер шрифта */
+  min-width: 320px;  /* Минимальная ширина */
+  color: black;  /* Цвет шрифта */
+  line-height: 1;  /* Расстояние между строками */
+}
+
+a {
+  text-decoration: none;  /* Отменяет все эффекты, в том числе установленные по умолчанию */
+  color: inherit;  /* inherit - ключевое слово, которое сообщает, что необходимо наследовать значение свойства у родительского элемента. */
+}
+
+address {
+  font-style: normal;
+}
+
+h1, h2, h3, p, ul {
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3 {
+  font-weight: 500;
+}
+
+
+
+ul {
+  list-style: none;
+}
+
+.accomondation-item {/* Блочный элемент, который обтекается другими элементами веб-страницы */
+  vertical-align: middle;  /* Выравнивание средней точки элемента по базовой линии родителя плюс половина высоты родительского элемента. */
+  position: relative;  /* Положение элемента устанавливается относительно его исходного места. Добавление свойств left, top, right и bottom изменяет позицию элемента и сдвигает его в ту или иную сторону от первоначального расположения. */
+}
+
+.container {
+  max-width: 1170px;  /* Максимальная ширина */
+  margin: 0 auto;  /* Размер отступов будет автоматически рассчитан браузером */
+}
+
+button, input {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;  /* Высота устанавливается исходя из содержимого элемента */
+}
+
+.clearfix::after { /* Метод отмены действия float без изменения структуры HTML-документа. Псевдоэлемент after позволяет вывести некий контент после содержимого элемента.*/
+  content: "";  /* Позволяет вставлять генерируемое содержание в текст веб-страницы, которое первоначально в тексте отсутствует. */
+  display: table;  /* Определяет, что элемент является блочной таблицей. */
+  clear: both;  /* Отменяет обтекание элемента одновременно с правого и левого края. */
+}
+
+.input::placeholder {
+  color: #999999;
+}
+
+button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  /* right: 15px; */
+  /* top: 50%; */
+  /* transform: translateY(-50%); */
+  border: none;
+  background: transparent url(https://www.flaticon.com/svg/static/icons/svg/3203/3203055.svg) center/50% no-repeat;
+}
+
+input[type=submit]:hover {
+  cursor: pointer;
+}
+
+:root {
+  --text-color-black: black;
+  --button-color-light: #ffcc66;
+  --text-color-white: white;
+  --button-color-dark: #cc9933;
+  --text-color-gray: #666666;
+}
+
+button:focus {
+  cursor: pointer;
+}
+
+/*
+var(--button-color-dark)
+var(--button-color-light)
+var(--text-color-black)
+var(--text-color-white)
+var(--text-color-gray)
+*/
