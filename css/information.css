@@ -1,17 +1,17 @@
 .information {
-  padding-left: 20px;
   padding-top: 35px;
   padding-bottom: 35px;
+  padding-left: 20px;
 }
 
 .information__title {
-  font-size: 40px;
   margin-bottom: 25px;
+  font-size: 40px;
 }
 
 .information__text {
-  font-size: 16px;
-  color: var(--text-color-gray);
-  line-height: 25px;
   width: 890px;
+  font-size: 16px;
+  line-height: 25px;
+  color: var(--text-color-gray);
 }

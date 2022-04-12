@@ -1,9 +1,9 @@
 .contacts-and-communication {
   display: flex;
   flex-direction: row;
+  margin-bottom: 20px;
   padding-top: 35px;
   padding-bottom: 35px;
-  margin-bottom: 20px;
 }
 
 .contacts {
@@ -18,17 +18,17 @@
 .contacts-list {
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
+  padding: 20px;
   background-color: var(--text-color-white);
   border-radius: 12px;
-  padding: 20px;
-  margin-top: 20px;
 }
 
 .contacts-section {
   display: flex;
   flex-direction: row;
-  font-size: 16px;
   padding: 30px;
+  font-size: 16px;
   background-image: url(../img/line.svg);
   background-repeat: no-repeat;
   background-position: center bottom;
@@ -48,26 +48,26 @@
 
 .contacts-address-build-route {
   display: inline-block;
+  width: 215px;
+  height: 70px;
   margin: 45px;
   padding: 20px;
   padding-top: 27px;
+  text-align: center;
   font-size: 16px;
   color: var(--button-color-light);
-  text-align: center;
-  width: 215px;
-  height: 70px;
-  border-radius: 12px;
-  border-color: var(--button-color-light);
-  background-color: var(--text-color-white);
   border: 1px;
   border-style: solid;
+  border-color: var(--button-color-light);
+  border-radius: 12px;
+  background-color: var(--text-color-white);
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
 
 .contacts-address-build-route:hover {
-  background-color: var(--button-color-light);
   color:var(--text-color-white);
+  background-color: var(--button-color-light);
   transform: scale(1.1);
   transition-duration: 200ms;
   transition-timing-function: linear;
@@ -105,9 +105,9 @@
 }
 
 .communication-title {
+  margin-bottom: 40px;
   padding-left: 25px;
   font-size: 40px;
-  margin-bottom: 40px;
 }
 
 
@@ -117,38 +117,38 @@
 }
 
 .communication-form-section {
-  border-radius: 12px;
-  background-color: var(--text-color-white);
-  border: 0px;
   margin-bottom: 25px;
   padding: 20px;
+  border: 0px;
+  border-radius: 12px;
+  background-color: var(--text-color-white);
 }
 
 .communication-form-section:nth-child(1) {
-  height: 68px;
   width: 347px;
+  height: 68px;
 }
 
 .communication-form-section:nth-child(2) {
-  height: 68px;
   width: 347px;
+  height: 68px;
 }
 
 .communication-form-section:nth-child(3) {
-  height: 110px;
   width: 347px;
+  height: 110px;
 }
 
 .form-find-number {
-  height: 70px;
   width: 347px;
-  background-color: var(--button-color-dark);
+  height: 70px;
+  margin-right: 25px;
   font-size: 16px;
   color: var(--text-color-white);
   border-radius: 12px;
   border-width: 0ch;
   border-color: var(--button-color-dark);
-  margin-right: 25px;
+  background-color: var(--button-color-dark);
   transition-duration: 200ms;
   transition-timing-function: linear;
 }
